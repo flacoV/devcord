@@ -10,6 +10,7 @@
 
 body{
     background-image: linear-gradient(to right bottom, #59158a, #6d27a0, #8139b6, #964acc, #ab5be3);
+    
     position: relative;
 }
 
@@ -26,7 +27,6 @@ section{
 
 header{
     background-color: white;
-    position: absolute;
     top: 0;
     left: 0;
     height: auto;
@@ -81,26 +81,22 @@ header .navbar li a:hover{
 }
 
 .container .sec1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "title title title . . img"
-    "desc desc desc . . img"
-    ". . button . . img";    
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap; 
 }
 
-.sec1{
-    
-    height: 660px;
+.sec1 .content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
 }
 
 .title{
     grid-area: title;
-    margin: 0 0 0 70px;
-    width: 600px;
     height: 70px;
     font-size: 36px;
     display: flex;
@@ -116,8 +112,6 @@ header .navbar li a:hover{
     border-radius: 8px;
     border-color: black;
     grid-area: desc;
-    margin: 0 0 0 80px;
-    width: 700px;
 }
 
 .bttn {
@@ -147,6 +141,7 @@ header .navbar li a:hover{
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 70%;
+    max-width: 350px;
   }
   
   .bttn:disabled {
@@ -189,9 +184,9 @@ header .navbar li a:hover{
 }
 
 .container-full{
-    height: 600px;
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 .container-h{
@@ -214,8 +209,6 @@ header .navbar li a:hover{
     height: 150px;
     margin-bottom: 15px;
     background-size: 9;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,13 +238,12 @@ header .navbar li a:hover{
 }
 
 .card .bsmo{
-    background-color: #ab5be3;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 270px;
+    max-width: 268px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
@@ -313,13 +305,165 @@ header .navbar li a:hover{
     background-color: black;
 }
 
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
 
+.product{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    justify-content: center;
+    align-items: center;
+}
 
+.product:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.products figure{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.product img{
+    width: 100%;
+    max-width: 100px;
+}
+
+.product .content{
+    padding: 15px;
+    text-align: center;
+}
+
+.product .content p{
+    line-height: 1.5;
+}
+
+.section-1{
+    margin-top: 120px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle{
+    max-width: 1200px;
+    margin-bottom: 10px;
+}
+
+.description{
+    max-width: 653px;
+}
+
+.content{
+    margin: 10px;
+    padding: 1.5em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cu-contact{
+    text-align: center;
+    font-size: 3em;
+}
+
+.cu-contact span{
+    color: #ab5be3;
+    font-size: 1em;
+}
+
+.contact-w{
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+}
+
+.contact-w > * {
+    padding: 1em;
+}
+
+.contact-f{
+    background-color: white;
+    color: #59158a;
+}
+
+.contact-f form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-f form .block{
+    grid-column: 1/3;
+}
+
+.contact-f form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-f form button,
+.contact-f form input,
+.contact-f form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #ab5be3;
+    border-bottom: 1px solid #59158a;
+}
+
+.contact-f form button{
+    outline-color: #ab5be3;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-f form button:hover,
+.contact-f form button:focus{
+    background-color: #59158a;
+    color: #ab5be3;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-i{
+    background-color: #59158a;
+}
+
+.contact-i h4,
+.contact-i ul,
+.contact-i p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-i ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-i ul li{
+    padding: .3em;
+}
 
 .pie-pagina{
     width: 100%;
     background-color: white;
+    margin-top: 60px;
 }
 
 .pie-pagina .grupo-1{
@@ -388,10 +532,23 @@ header .navbar li a:hover{
         grid-gap: 30px;
         padding: 35px 0px;
     }
-    .container .sec1{
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+    .container .sec1 {
+        flex-direction: column;
+    }
+
+    .sec1 .content {
+        max-width: 100%;
+    }
+
+    .container-full .container-h{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-full-shop .container-h-shop{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
-
