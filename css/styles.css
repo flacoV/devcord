@@ -206,7 +206,7 @@ header .navbar li a:hover{
 
 .card-image{
     background-color: #59158a;
-    height: 150px;
+    max-height: 150px;
     margin-bottom: 15px;
     background-size: 9;
     display: flex;
