@@ -1,0 +1,170 @@
+.secindex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    flex-wrap: wrap;
+
+    .txt{
+        color: white;
+        padding-top: 40px;
+        
+        h2{
+            font-size: xx-large;
+        }
+    }
+    
+    .container2{
+        max-width: 1500px;
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .tarjeta{
+            margin: 20px;
+            width: 100%;
+            max-width: 300px;
+            max-height: 400px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 16px;
+
+            img{
+                width: auto;
+                max-width: 80px;
+                border-radius: 50%;
+                margin: 20px;
+            }
+
+            p{
+                padding: 8px;
+                margin: 12px;
+            }
+
+            .estrellas{
+                margin: 25px;
+                color: gold;
+            }
+        }
+    }
+}
+
+.container-full{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .container-h{
+        background-color: white;
+        max-width: 1200px;
+        margin-top: 40px;
+        border-radius: 16px;
+    
+        .card{
+            background-color: #ab5be3;
+            width: 270px;
+            margin: 30px;
+            border-radius: 16px;
+
+            .card-image{
+                background-color: #59158a;
+                max-height: 150px;
+                border-radius: 16px;
+                margin-bottom: 15px;
+                background-size: 9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                img{
+                    width: auto;
+                    height: 120px;
+                }
+            } 
+
+            h2{
+                color: #59158a;
+                text-shadow: -1px 3px 2px rgba(255, 255, 255, 0.6);
+            }
+        
+            .bsul{
+                color: white;
+                text-shadow: -1px 3px 2px #59158a;
+
+                li{
+                    list-style-type: none;
+                    margin-left: 8px;
+                }
+            }
+
+            .bsmo{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                max-width: 268px;
+
+                input{
+                    appearance: button;
+                    backface-visibility: hidden;
+                    background-color: #59158a;
+                    border-radius: 6px;
+                    border-width: 0;
+                    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+                    box-sizing: border-box;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 100%;
+                    height: 44px;
+                    line-height: 1.15;
+                    margin: 10px 0 10px;
+                    outline: none;
+                    overflow: hidden;
+                    padding: 0 10px;
+                    position: relative;
+                    text-align: center;
+                    text-transform: none;
+                    transform: translateZ(0);
+                    transition: all .2s,box-shadow .08s ease-in;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    width: 60%;
+                }
+            }
+        }
+
+        .car-2{
+            background-color: black;
+
+            .card-image{
+                
+                p{
+                    color: white;
+                    position: absolute;
+                    background-color: #59158a;
+                    margin-bottom: 130px;
+                    margin-left: 190px;
+                    width: 170px;
+                    border-radius: 16px;
+                }
+            }
+
+            h2{
+                color: white;
+                text-shadow: -1px 3px 2px #ab5be3;
+            }
+
+            .bsul{
+                text-shadow: -1px 3px 2px #ab5be3;
+            }
+
+            .bsmo{
+                background-color: black;
+            }
+        }
+    }
+}

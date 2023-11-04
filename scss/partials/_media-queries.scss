@@ -1,0 +1,31 @@
+@media screen and (max-width: 800px){
+    .pie-pagina{
+        
+        .grupo-1{
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+    }
+
+    .container{
+
+        .sec1{
+            flex-direction: column;
+
+            .content{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .container-full{
+        
+        .container-h{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+        }
+    }
+}

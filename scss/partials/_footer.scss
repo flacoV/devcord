@@ -1,0 +1,69 @@
+.pie-pagina{
+    width: 100%;
+    background-color: white;
+    margin-top: 60px;
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 40px 0px;
+
+        .box{
+
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 250px;
+                    height: 80px;
+                }
+            }
+
+            h2{
+                color: #59158a;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+
+            p{
+                color: #ab5be3;
+                margin-bottom: 10px;
+            }
+        
+            .red-social{
+
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: #59158a;
+                    margin-right: 10px;
+
+                    &:hover{
+                        color: #ab5be3;
+                    }
+                }
+            }
+        }
+    }
+
+    .grupo-2{
+        color: #59158a;
+        display: flex;
+        justify-content: center;
+
+        small{
+            font-size: 15px;
+        }
+    }
+}
