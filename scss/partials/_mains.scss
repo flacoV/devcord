@@ -94,3 +94,19 @@ section{
         }
     } 
 }
+
+.section-1{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .tittle{
+        max-width: 1200px;
+        margin-bottom: 10px;
+    }
+
+    .description{
+        max-width: 653px;
+    }
+}

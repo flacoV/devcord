@@ -1,3 +1,25 @@
+@media screen and (max-width: 1157px){
+    .products{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .product{
+            width: auto;
+            max-width: 400px;
+        }
+    }
+}
+@media screen and (max-width: 973px){
+    .container-full{
+        
+        .container-h{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+        }
+    }
+}
 @media screen and (max-width: 800px){
     .pie-pagina{
         
@@ -6,6 +28,20 @@
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 30px;
             padding: 35px 0px;
+
+            .box{
+                h2{
+                    margin-left: 20px;  
+                }
+
+                p{
+                    margin-left: 20px;
+                }
+
+                .red-social{
+                    margin-left: 20px;
+                }
+            }
         }
     }
 
@@ -26,6 +62,26 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width: 723px){
+    .section-1{
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 648px){
+    .container{
+        margin: 0;
+        .sec1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .content{
+                max-width: 100%;
+                margin-left: 30px;
+            }
         }
     }
 }
