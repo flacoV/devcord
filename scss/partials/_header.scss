@@ -20,12 +20,26 @@ header{
         .logo{
             cursor: pointer;
             flex-wrap: wrap;
+            animation:scale-up-center 0.6s;
+
+            @keyframes scale-up-center{ 
+                0%{transform:scale(.5)} 
+                100%{transform:scale(1)} 
+            }
+
         }
 
         .navbar{
             position: relative;
             display: flex;
             flex-wrap: wrap;
+            animation:scale-up-center 0.4s;
+
+            @keyframes scale-up-center{ 
+                0%{transform:scale(.5)} 
+                100%{transform:scale(1)} 
+            }
+
         
             li{
                 list-style: none;
@@ -33,14 +47,14 @@ header{
         
             a{
                 text-decoration: none;
-                color: #59158a;
+                color: map-get($map: $palette, $key: 'primary');
                 font-weight: 500;
                 transition: 0.3s;
                 font-size: 0.9em;
                 text-transform: uppercase;
             
                 &:hover{
-                    color: #ab5be3;
+                    color: map-get($map: $palette, $key: 'secondary');
                     transform: scale(1.1);
                 }
             }

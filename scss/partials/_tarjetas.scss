@@ -31,6 +31,12 @@
             flex-direction: column;
             align-items: center;
             border-radius: 16px;
+            animation:scale-up-center 0.6s;
+
+            @keyframes scale-up-center{ 
+                0%{transform:scale(.5)} 
+                100%{transform:scale(1)} 
+            }
 
             img{
                 width: auto;
@@ -64,13 +70,19 @@
         border-radius: 16px;
     
         .card{
-            background-color: #ab5be3;
+            background-color: map-get($map: $palette, $key: 'secondary');
             width: 270px;
             margin: 30px;
             border-radius: 16px;
+            animation:scale-up-center 0.6s;
+
+            @keyframes scale-up-center{ 
+                0%{transform:scale(.5)} 
+                100%{transform:scale(1)} 
+            }
 
             .card-image{
-                background-color: #59158a;
+                background-color: map-get($map: $palette, $key: 'primary');
                 max-height: 150px;
                 border-radius: 16px;
                 margin-bottom: 15px;
@@ -86,13 +98,13 @@
             } 
 
             h2{
-                color: #59158a;
+                color: map-get($map: $palette, $key: 'primary');
                 text-shadow: -1px 3px 2px rgba(255, 255, 255, 0.6);
             }
         
             .bsul{
                 color: white;
-                text-shadow: -1px 3px 2px #59158a;
+                text-shadow: -1px 3px 2px map-get($map: $palette, $key: 'primary');
 
                 li{
                     list-style-type: none;
@@ -112,7 +124,7 @@
                 input{
                     appearance: button;
                     backface-visibility: hidden;
-                    background-color: #59158a;
+                    background-color: map-get($map: $palette, $key: 'primary');
                     border-radius: 6px;
                     border-width: 0;
                     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
@@ -147,7 +159,7 @@
                 p{
                     color: white;
                     position: absolute;
-                    background-color: #59158a;
+                    background-color: map-get($map: $palette, $key: 'primary');
                     margin-bottom: 130px;
                     margin-left: 190px;
                     width: 170px;
@@ -160,11 +172,11 @@
 
             h2{
                 color: white;
-                text-shadow: -1px 3px 2px #ab5be3;
+                text-shadow: -1px 3px 2px map-get($map: $palette, $key: 'secondary');
             }
 
             .bsul{
-                text-shadow: -1px 3px 2px #ab5be3;
+                text-shadow: -1px 3px 2px map-get($map: $palette, $key: 'secondary');
             }
 
             .bsmo{
@@ -178,6 +190,13 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    animation:scale-up-center 0.6s;
+
+            @keyframes scale-up-center{ 
+                0%{transform:scale(.5)} 
+                100%{transform:scale(1)} 
+            }
+
 
     .product{
         width: 100%;

@@ -1,0 +1,25 @@
+@mixin titulo{
+    color: white;
+    padding-top: 25px;
+    font-size: xx-large;
+    text-shadow: -1px 3px 2px #ab5be3;
+}
+
+@mixin description{
+    color: map-get($map: $palette, $key: 'secondary');
+    text-shadow: -1px 3px 2px map-get($map: $palette, $key: 'primary');
+}
+
+.seccion1{
+    width: auto;
+    height: 80px;
+    margin-top: 80px;
+
+    .tit1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include titulo;
+    }
+}
+

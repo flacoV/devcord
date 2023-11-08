@@ -28,13 +28,13 @@
             }
 
             h2{
-                color: #59158a;
+                color: map-get($map: $palette, $key: 'primary');
                 margin-bottom: 25px;
                 font-size: 20px;
             }
 
             p{
-                color: #ab5be3;
+                color: map-get($map: $palette, $key: 'secondary');
                 margin-bottom: 10px;
             }
         
@@ -46,11 +46,11 @@
                     width: 45px;
                     height: 45px;
                     line-height: 45px;
-                    color: #59158a;
+                    color: map-get($map: $palette, $key: 'primary');
                     margin-right: 10px;
 
                     &:hover{
-                        color: #ab5be3;
+                        color: map-get($map: $palette, $key: 'secondary');
                     }
                 }
             }
@@ -58,7 +58,7 @@
     }
 
     .grupo-2{
-        color: #59158a;
+        color: map-get($map: $palette, $key: 'primary');
         display: flex;
         justify-content: center;
 

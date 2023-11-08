@@ -10,7 +10,7 @@
         font-size: 3em;
 
         span{
-            color: #ab5be3;
+            color: map-get($map: $palette, $key: 'secondary');
             font-size: 1em;
         }
     }
@@ -24,7 +24,7 @@
 
         .contact-f{
             background-color: white;
-            color: #59158a;
+            color: map-get($map: $palette, $key: 'primary');
 
             form{
                 display: grid;
@@ -45,23 +45,23 @@
                     border: none;
                     background: none;
                     outline: 0;
-                    color: #ab5be3;
-                    border-bottom: 1px solid #59158a;
-                    outline-color: #ab5be3;
+                    color: map-get($map: $palette, $key: 'secondary');
+                    border-bottom: 1px solid map-get($map: $palette, $key: 'primary');
+                    outline-color: map-get($map: $palette, $key: 'secondary');
                     border: 0;
                     text-transform: uppercase;
                     padding: 1em;
 
                     &:hover{
-                        background-color: #59158a;
-                        color: #ab5be3;
+                        background-color: map-get($map: $palette, $key: 'primary');
+                        color: map-get($map: $palette, $key: 'secondary');
                         transition: background-color 1s ease-out;
                         outline: 0;
                     }
 
                     &:focus{
-                        background-color: #59158a;
-                        color: #ab5be3;
+                        background-color: map-get($map: $palette, $key: 'primary');
+                        color: map-get($map: $palette, $key: 'secondary');
                         transition: background-color 1s ease-out;
                         outline: 0;
                     }
@@ -73,8 +73,8 @@
                     border: none;
                     background: none;
                     outline: 0;
-                    color: #ab5be3;
-                    border-bottom: 1px solid #59158a;
+                    color: map-get($map: $palette, $key: 'secondary');
+                    border-bottom: 1px solid map-get($map: $palette, $key: 'primary');
                 }
 
                 textarea{
@@ -83,14 +83,14 @@
                     border: none;
                     background: none;
                     outline: 0;
-                    color: #ab5be3;
-                    border-bottom: 1px solid #59158a;
+                    color: map-get($map: $palette, $key: 'secondary');
+                    border-bottom: 1px solid map-get($map: $palette, $key: 'primary');
                 }
             }
         }
     
         .contact-i{
-            background-color: #59158a;
+            background-color: map-get($map: $palette, $key: 'primary');
 
             h4{
                 text-align: center;

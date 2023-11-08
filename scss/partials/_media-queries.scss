@@ -20,6 +20,22 @@
         }
     }
 }
+@media screen and (max-width: 866px){
+    header{
+        padding: 10px 75px;
+
+        .navbar{
+
+            li{
+                margin-left: 15px;
+
+                a{
+                    font-size: medium;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 800px){
     .pie-pagina{
         
@@ -68,6 +84,22 @@
 @media screen and (max-width: 723px){
     .section-1{
         padding: 0 15px;
+    }
+}
+@media screen and (max-width: 696px){
+    header{
+        padding: 10px 40px;
+
+        .navbar{
+
+            li{
+                margin-left: 15px;
+
+                a{
+                    font-size: medium;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 648px){

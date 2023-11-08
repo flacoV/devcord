@@ -33,11 +33,29 @@ header img {
 header .logo {
   cursor: pointer;
   flex-wrap: wrap;
+  animation: scale-up-center 0.6s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 header .navbar {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  animation: scale-up-center 0.4s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 header .navbar li {
   list-style: none;
@@ -68,7 +86,7 @@ header .navbar li a:hover {
   color: white;
   padding-top: 25px;
   font-size: xx-large;
-  text-shadow: 0px 0px 27px rgba(0, 0, 0, 0.61);
+  text-shadow: -1px 3px 2px #ab5be3;
 }
 
 section {
@@ -101,6 +119,15 @@ section {
   padding: 1.5em;
   margin-left: auto;
   margin-right: auto;
+  animation: scale-up-center 0.6s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .container .sec1 .content .title {
   height: 70px;
@@ -116,7 +143,7 @@ section {
   border-radius: 8px;
   border-color: black;
 }
-.container .sec1 .content .bttn {
+.container .sec1 .content .boton, .container .sec1 .content .bttn {
   -webkit-appearance: button;
      -moz-appearance: button;
           appearance: button;
@@ -125,6 +152,8 @@ section {
   border-radius: 6px;
   border-width: 0;
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+}
+.container .sec1 .content .bttn {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -156,6 +185,15 @@ section {
 .container .sec1 .img {
   margin: 0 80px 0 0;
   transition: all 0.5s;
+  animation: scale-up-center 0.6s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .container .sec1 .img:hover {
   transform: scale(1.3);
@@ -168,11 +206,17 @@ section {
   flex-wrap: wrap;
 }
 .section-1 .tittle {
+  color: white;
+  padding-top: 25px;
+  font-size: xx-large;
+  text-shadow: -1px 3px 2px #ab5be3;
   max-width: 1200px;
   margin-bottom: 10px;
 }
 .section-1 .description {
   max-width: 653px;
+  color: #ab5be3;
+  text-shadow: -1px 3px 2px #59158a;
 }
 
 .secindex {
@@ -206,6 +250,15 @@ section {
   flex-direction: column;
   align-items: center;
   border-radius: 16px;
+  animation: scale-up-center 0.6s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .secindex .container2 .tarjeta img {
   width: auto;
@@ -238,6 +291,15 @@ section {
   width: 270px;
   margin: 30px;
   border-radius: 16px;
+  animation: scale-up-center 0.6s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .container-full .container-h .card .card-image {
   background-color: #59158a;
@@ -334,6 +396,15 @@ section {
   width: 100%;
   display: flex;
   flex-direction: row;
+  animation: scale-up-center 0.6s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .products .product {
   width: 100%;
@@ -541,6 +612,17 @@ section {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 866px) {
+  header {
+    padding: 10px 75px;
+  }
+  header .navbar li {
+    margin-left: 15px;
+  }
+  header .navbar li a {
+    font-size: medium;
+  }
+}
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 100%;
@@ -572,6 +654,17 @@ section {
 @media screen and (max-width: 723px) {
   .section-1 {
     padding: 0 15px;
+  }
+}
+@media screen and (max-width: 696px) {
+  header {
+    padding: 10px 40px;
+  }
+  header .navbar li {
+    margin-left: 15px;
+  }
+  header .navbar li a {
+    font-size: medium;
   }
 }
 @media screen and (max-width: 648px) {
