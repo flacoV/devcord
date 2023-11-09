@@ -29,14 +29,10 @@ section{
                 padding: 1.5em;
                 margin-left: auto;
                 margin-right: auto;
-                animation:scale-up-center 0.6s;
-
-            @keyframes scale-up-center{ 
-                0%{transform:scale(.5)} 
-                100%{transform:scale(1)} 
-            }
-
-    
+                animation:scale-up-horizontal-left 0.5s;
+                
+                @keyframes scale-up-horizontal-left{0%{transform:scaleX(.4);transform-origin:left center}100%{transform:scaleX(1);transform-origin:left center}}
+            
             .title{
                 height: 70px;
                 font-size: 36px;
@@ -98,13 +94,18 @@ section{
         .img{
             margin: 0 80px 0 0;
             transition: all 0.5s;
-            animation:scale-up-center 0.6s;
+            animation:scale-up-horizontal-right 0.5s;
 
-            @keyframes scale-up-center{ 
-                0%{transform:scale(.5)} 
-                100%{transform:scale(1)} 
+            @keyframes scale-up-horizontal-right{
+                0%{
+                    transform:scaleX(.4);
+                    transform-origin:right center
+                }
+                100%{
+                    transform:scaleX(1);
+                    transform-origin:right center
+                }
             }
-
 
             &:hover{
                 transform: scale(1.3);

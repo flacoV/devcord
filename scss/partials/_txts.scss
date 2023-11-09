@@ -20,6 +20,17 @@
         justify-content: center;
         align-items: center;
         @include titulo;
+        animation:tracking-in-contract 0.5s linear both;
+
+        @keyframes tracking-in-contract{
+            0%{letter-spacing:.6em;opacity:0
+            }
+            40%{opacity:.6
+            }
+            100%{letter-spacing:normal;
+            opacity:1
+        }
+        }
     }
 }
 
