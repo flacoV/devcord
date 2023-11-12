@@ -17,7 +17,7 @@ section{
 }
 
 
-    .container{
+    .container-index{
         margin: 10px 10px 10px 10px;
         display: flex;
         flex-wrap: wrap;
@@ -166,7 +166,7 @@ section{
                 }
             }
 
-            .index-buttons{
+            .index-buttns{
                 display: flex;
                 flex-direction: row;
                 gap: 80px;
@@ -174,7 +174,7 @@ section{
                 align-items: center;
                 padding: 50px;
 
-                .tienda-button{
+                .tienda-buttn{
 
                     .bttn{
                         @extend .boton;
@@ -213,7 +213,7 @@ section{
                     }
                 }
 
-                .hosting-button{
+                .hosting-buttn{
                     
                     .bttn{
                         @extend .boton;

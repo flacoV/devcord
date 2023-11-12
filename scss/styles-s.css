@@ -103,7 +103,7 @@ header .navbar li a:hover {
   }
 }
 
-.boton, .section-main .container-content-main .txt-content .index-buttons .hosting-button .bttn, .section-main .container-content-main .txt-content .index-buttons .tienda-button .bttn, .container .sec1 .content .bttn {
+.boton, .section-main .container-content-main .txt-content .index-buttns .hosting-buttn .bttn, .section-main .container-content-main .txt-content .index-buttns .tienda-buttn .bttn, .container-index .sec1 .content .bttn {
   -webkit-appearance: button;
      -moz-appearance: button;
           appearance: button;
@@ -123,20 +123,20 @@ section {
   padding: 60px;
 }
 
-.container {
+.container-index {
   margin: 10px 10px 10px 10px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 220px;
 }
-.container .sec1 {
+.container-index .sec1 {
   flex-direction: row;
   gap: 20px;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
 }
-.container .sec1 .content {
+.container-index .sec1 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,7 +157,7 @@ section {
     transform-origin: left center;
   }
 }
-.container .sec1 .content .title {
+.container-index .sec1 .content .title {
   height: 70px;
   font-size: 36px;
   display: flex;
@@ -166,12 +166,12 @@ section {
   color: #ab5be3;
   text-shadow: 0px 5px 2px rgba(255, 255, 255, 0.6);
 }
-.container .sec1 .content .desc {
+.container-index .sec1 .content .desc {
   color: white;
   border-radius: 8px;
   border-color: black;
 }
-.container .sec1 .content .bttn {
+.container-index .sec1 .content .bttn {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -198,13 +198,13 @@ section {
   align-items: center;
   text-decoration: none;
 }
-.container .sec1 .content .bttn:disabled {
+.container-index .sec1 .content .bttn:disabled {
   cursor: default;
 }
-.container .sec1 .content .bttn:focus {
+.container-index .sec1 .content .bttn:focus {
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
-.container .sec1 .img {
+.container-index .sec1 .img {
   margin: 0 80px 0 0;
   transition: all 0.5s;
   animation: scale-up-horizontal-right 0.5s;
@@ -219,7 +219,7 @@ section {
     transform-origin: right center;
   }
 }
-.container .sec1 .img:hover {
+.container-index .sec1 .img:hover {
   transform: scale(1.3);
 }
 
@@ -264,7 +264,7 @@ section {
   padding-top: 7px;
   gap: 5px;
 }
-.section-main .container-content-main .txt-content .index-buttons {
+.section-main .container-content-main .txt-content .index-buttns {
   display: flex;
   flex-direction: row;
   gap: 80px;
@@ -272,7 +272,7 @@ section {
   align-items: center;
   padding: 50px;
 }
-.section-main .container-content-main .txt-content .index-buttons .tienda-button .bttn {
+.section-main .container-content-main .txt-content .index-buttns .tienda-buttn .bttn {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -299,13 +299,13 @@ section {
   align-items: center;
   text-decoration: none;
 }
-.section-main .container-content-main .txt-content .index-buttons .tienda-button .bttn:disabled {
+.section-main .container-content-main .txt-content .index-buttns .tienda-buttn .bttn:disabled {
   cursor: default;
 }
-.section-main .container-content-main .txt-content .index-buttons .tienda-button .bttn:focus {
+.section-main .container-content-main .txt-content .index-buttns .tienda-buttn .bttn:focus {
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
-.section-main .container-content-main .txt-content .index-buttons .hosting-button .bttn {
+.section-main .container-content-main .txt-content .index-buttns .hosting-buttn .bttn {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -332,10 +332,10 @@ section {
   align-items: center;
   text-decoration: none;
 }
-.section-main .container-content-main .txt-content .index-buttons .hosting-button .bttn:disabled {
+.section-main .container-content-main .txt-content .index-buttns .hosting-buttn .bttn:disabled {
   cursor: default;
 }
-.section-main .container-content-main .txt-content .index-buttons .hosting-button .bttn:focus {
+.section-main .container-content-main .txt-content .index-buttns .hosting-buttn .bttn:focus {
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
 
