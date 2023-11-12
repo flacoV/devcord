@@ -379,6 +379,15 @@ section {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: scale-up-center 0.6s;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .secindex .container2 .tarjeta {
   margin: 20px;
@@ -390,15 +399,6 @@ section {
   flex-direction: column;
   align-items: center;
   border-radius: 16px;
-  animation: scale-up-center 0.6s;
-}
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 .secindex .container2 .tarjeta img {
   width: auto;
@@ -413,6 +413,10 @@ section {
 .secindex .container2 .tarjeta .estrellas {
   margin: 25px;
   color: gold;
+}
+.secindex .container2 .tarjeta:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
 .container-full {
