@@ -10,6 +10,16 @@
         }
     }
 }
+@media screen and (max-width: 1090px){
+    .section-main{
+
+        .container-content-main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
 @media screen and (max-width: 973px){
     .container-full{
         

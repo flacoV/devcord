@@ -1,3 +1,12 @@
+.boton{
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: map-get($map: $palette, $key: 'primary');
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+}
+
 section{
     position: relative;
     width: 100%;
@@ -12,6 +21,7 @@ section{
         margin: 10px 10px 10px 10px;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 220px;
 
         .sec1{
             flex-direction: row;
@@ -49,15 +59,6 @@ section{
                 border-color: black;
             }
 
-            .boton{
-                appearance: button;
-                backface-visibility: hidden;
-                background-color: map-get($map: $palette, $key: 'primary');
-                border-radius: 6px;
-                border-width: 0;
-                box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
-            }
-
             .bttn{
                 @extend .boton;
                 box-sizing: border-box;
@@ -80,7 +81,11 @@ section{
                 touch-action: manipulation;
                 width: 70%;
                 max-width: 350px;
-                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+
                 &:disabled{
                     cursor: default;
                 }
@@ -112,6 +117,143 @@ section{
             }
         }
     } 
+}
+
+.section-main{
+    background-color: #fff;    
+
+    .container-content-main{
+        width: auto;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 60px;
+
+        .txt-content{
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h2{
+                display: flex;
+                justify-content: end;
+                font-size: xx-large;
+                color: map-get($map: $palette, $key: 'primary');
+                margin-bottom: 22px;
+
+                span{
+                    font-size: xx-large;
+                    margin-left: 7px;
+                    color: transparent;
+                    -webkit-text-stroke: 2px map-get($map: $palette, $key: 'primary');
+                }
+            }
+
+                p .content-p{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 28px;
+                    column-gap: 18px;
+                }
+
+                ul{
+                    h3{
+                        margin-top: 12px;
+                    }
+    
+                    .content-p2{
+                       padding-top: 7px;
+                       gap: 5px;
+                }
+            }
+
+            .index-buttons{
+                display: flex;
+                flex-direction: row;
+                gap: 80px;
+                justify-content: center;
+                align-items: center;
+                padding: 50px;
+
+                .tienda-button{
+
+                    .bttn{
+                        @extend .boton;
+                        box-sizing: border-box;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 100%;
+                        height: 44px;
+                        line-height: 1.15;
+                        margin: 12px 0 0;
+                        outline: none;
+                        overflow: hidden;
+                        padding: 0 45px;
+                        position: relative;
+                        text-align: center;
+                        text-transform: none;
+                        transform: translateZ(0);
+                        transition: all 02s, box-shadow .08s ease-in;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                        width: 70%;
+                        max-width: 350px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+        
+                        &:disabled{
+                            cursor: default;
+                        }
+        
+                        &:focus{
+                            box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+                        }
+                    }
+                }
+
+                .hosting-button{
+                    
+                    .bttn{
+                        @extend .boton;
+                        box-sizing: border-box;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 100%;
+                        height: 44px;
+                        line-height: 1.15;
+                        margin: 12px 0 0;
+                        outline: none;
+                        overflow: hidden;
+                        padding: 0 45px;
+                        position: relative;
+                        text-align: center;
+                        text-transform: none;
+                        transform: translateZ(0);
+                        transition: all 02s, box-shadow .08s ease-in;
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                        width: 70%;
+                        max-width: 350px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+        
+                        &:disabled{
+                            cursor: default;
+                        }
+        
+                        &:focus{
+                            box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+                        }
+                    }   
+                }
+            }
+        }
+    }
 }
 
 .section-1{
