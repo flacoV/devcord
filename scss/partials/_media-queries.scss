@@ -206,10 +206,6 @@
 
         .sec1{
 
-            .content{
-
-            }
-
             .img{
                 width: 70%;
                 max-width: 495px;      
@@ -219,13 +215,43 @@
 
     .section-main{
 
-        .img-content{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 60%;
-                max-width: 495;
-           }
+        .container-content-main{
+
+            .txt-content{
+                
+                h2{
+                    font-size: x-large;
+
+                    span{
+                        font-size: x-large;
+                    }
+                }
+
+                p{
+                    padding: 0 20px;
+                }
+
+                ul{
+
+                    h3{
+                        margin-left: 18px;
+                    }
+
+                    li{
+                        padding: 3px 20px;
+                    }
+                }
+            }
+
+                .img-content{
+                    display: flex;
+                    justify-content: center;
+
+                    img{
+                        width: 60%;
+                        max-width: 495;
+                    }
+                }
         }
     }
 }
