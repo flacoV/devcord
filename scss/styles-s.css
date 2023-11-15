@@ -755,6 +755,15 @@ section {
     flex-direction: column;
     justify-content: center;
   }
+  .section-main .container-content-main .txt-content h2 {
+    justify-content: center;
+  }
+  .section-main .container-content-main .txt-content p {
+    padding: 0 8px;
+  }
+  .section-main .container-content-main .txt-content ul {
+    padding: 0 8px;
+  }
 }
 @media screen and (max-width: 973px) {
   .container-full .container-h {
@@ -772,6 +781,17 @@ section {
   }
   header .navbar li a {
     font-size: medium;
+  }
+  .section-main .container-content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-main .container-content-main .txt-content .index-buttns .tienda-buttn .bttn {
+    width: 100%;
+  }
+  .section-main .container-content-main .txt-content .index-buttns .hosting-buttn .bttn {
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -809,26 +829,58 @@ section {
 }
 @media screen and (max-width: 696px) {
   header {
-    padding: 10px 40px;
+    flex-direction: column;
+    padding: 0;
   }
-  header .navbar li {
-    margin-left: 15px;
+  header .navbar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #ab5be3;
+    width: 100%;
+    margin-bottom: 0;
   }
   header .navbar li a {
     font-size: medium;
+    color: white;
   }
 }
 @media screen and (max-width: 648px) {
-  .container {
+  .container-index {
     margin: 0;
   }
-  .container .sec1 {
+  .container-index .sec1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .container .sec1 .content {
+  .container-index .sec1 .content {
     max-width: 100%;
     margin-left: 30px;
+  }
+  .container-index .sec1 .img {
+    width: 100%;
+    max-width: 648px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 501px) {
+  .container-index .sec1 .img {
+    width: 100%;
+    max-width: 501px;
+  }
+}
+@media screen and (max-width: 495px) {
+  .container-index .sec1 .img {
+    width: 70%;
+    max-width: 495px;
+  }
+  .section-main .img-content {
+    display: flex;
+    justify-content: center;
+  }
+  .section-main .img-content img {
+    width: 60%;
+    max-width: 495;
   }
 }/*# sourceMappingURL=styles-s.css.map */

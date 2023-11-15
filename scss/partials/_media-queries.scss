@@ -17,6 +17,21 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            .txt-content{
+
+                h2{
+                    justify-content: center;
+                }
+
+                p{
+                    padding: 0 8px;
+                }
+
+                ul{
+                    padding: 0 8px;
+                }
+            }
         }
     }
 }
@@ -41,6 +56,35 @@
 
                 a{
                     font-size: medium;
+                }
+            }
+        }
+    }
+
+    .section-main{
+
+        .container-content-main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .txt-content{
+
+                .index-buttns{
+                    
+                   .tienda-buttn{
+
+                        .bttn{
+                            width: 100%;
+                        }
+                   }
+
+                   .hosting-buttn{
+
+                    .bttn{
+                        width: 100%;
+                    }
+                   }
                 }
             }
         }
@@ -96,24 +140,32 @@
         padding: 0 15px;
     }
 }
+
 @media screen and (max-width: 696px){
     header{
-        padding: 10px 40px;
+        flex-direction: column;
+        padding: 0;
 
         .navbar{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: map-get($map: $palette, $key: 'secondary');
+            width: 100%;
+            margin-bottom: 0;
 
             li{
-                margin-left: 15px;
 
                 a{
                     font-size: medium;
+                    color: white;
                 }
             }
         }
     }
 }
 @media screen and (max-width: 648px){
-    .container{
+    .container-index{
         margin: 0;
         .sec1{
             display: flex;
@@ -124,6 +176,56 @@
                 max-width: 100%;
                 margin-left: 30px;
             }
+        
+            .img{
+                width: 100%;
+                max-width: 648px;
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 501px){
+    .container-index{
+
+        .sec1{
+
+            .content{
+
+            }
+
+            .img{
+                width: 100%;
+                max-width: 501px;      
+            }
+        }
+    }
+}
+@media screen and (max-width: 495px){
+    .container-index{
+
+        .sec1{
+
+            .content{
+
+            }
+
+            .img{
+                width: 70%;
+                max-width: 495px;      
+            }
+        }
+    }
+
+    .section-main{
+
+        .img-content{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 60%;
+                max-width: 495;
+           }
         }
     }
 }
