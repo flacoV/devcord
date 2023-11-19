@@ -341,9 +341,10 @@ section {
 
 .section-1 {
   margin-top: 120px;
+  margin-left: 120px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: left;
 }
 .section-1 .tittle {
   color: white;
@@ -354,6 +355,27 @@ section {
   margin-bottom: 10px;
 }
 .section-1 .description {
+  max-width: 653px;
+  color: #cd9dee;
+  text-shadow: -1px 3px 2px #59158a;
+}
+
+.section-2 {
+  margin-top: 120px;
+  margin-right: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+.section-2 .tittle {
+  color: white;
+  padding-top: 25px;
+  font-size: xx-large;
+  text-shadow: -1px 3px 2px #ab5be3;
+  max-width: 1200px;
+  margin-bottom: 10px;
+}
+.section-2 .description {
   max-width: 653px;
   color: #cd9dee;
   text-shadow: -1px 3px 2px #59158a;
@@ -794,6 +816,16 @@ section {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 892px) {
+  .section-1 {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .section-2 {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 866px) {
   header {
     padding: 10px 75px;
@@ -846,6 +878,9 @@ section {
 }
 @media screen and (max-width: 723px) {
   .section-1 {
+    padding: 0 15px;
+  }
+  .section-2 {
     padding: 0 15px;
   }
 }

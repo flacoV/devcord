@@ -45,6 +45,17 @@
         }
     }
 }
+@media screen and (max-width: 892px){
+    .section-1{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .section-2{
+        justify-content: center;
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 866px){
     header{
         padding: 10px 75px;
@@ -137,6 +148,10 @@
 }
 @media screen and (max-width: 723px){
     .section-1{
+        padding: 0 15px;
+    }
+
+    .section-2{
         padding: 0 15px;
     }
 }
