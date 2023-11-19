@@ -17,12 +17,18 @@
 
     .contact-w{
         box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
-        
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+
         > *{
             padding: 1em;
         }
 
         .contact-f{
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
             background-color: white;
             color: map-get($map: $palette, $key: 'primary');
 
@@ -51,6 +57,7 @@
                     border: 0;
                     text-transform: uppercase;
                     padding: 1em;
+                    border-radius: 16px;
 
                     &:hover{
                         background-color: map-get($map: $palette, $key: 'primary');
@@ -91,6 +98,8 @@
     
         .contact-i{
             background-color: map-get($map: $palette, $key: 'primary');
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 16px;
 
             h4{
                 text-align: center;

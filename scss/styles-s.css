@@ -355,7 +355,7 @@ section {
 }
 .section-1 .description {
   max-width: 653px;
-  color: #ab5be3;
+  color: #cd9dee;
   text-shadow: -1px 3px 2px #59158a;
 }
 
@@ -405,6 +405,10 @@ section {
   max-width: 80px;
   border-radius: 50%;
   margin: 20px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  max-height: 80px;
+  height: auto;
 }
 .secindex .container2 .tarjeta p {
   padding: 8px;
@@ -417,6 +421,15 @@ section {
 .secindex .container2 .tarjeta:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
+}
+.secindex .container2 .tarjeta6 h2 {
+  margin-top: 20px;
+}
+.secindex .container2 .tarjeta7 h2 {
+  margin-top: 20px;
+}
+.secindex .container2 .tarjeta7 .estrellas {
+  margin-top: 0;
 }
 
 .container-full {
@@ -600,11 +613,17 @@ section {
 }
 .content .contact-w {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 .content .contact-w > * {
   padding: 1em;
 }
 .content .contact-w .contact-f {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
   background-color: white;
   color: #59158a;
 }
@@ -631,6 +650,7 @@ section {
   border: 0;
   text-transform: uppercase;
   padding: 1em;
+  border-radius: 16px;
 }
 .content .contact-w .contact-f form button:hover {
   background-color: #59158a;
@@ -664,6 +684,8 @@ section {
 }
 .content .contact-w .contact-i {
   background-color: #59158a;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 .content .contact-w .contact-i h4 {
   text-align: center;

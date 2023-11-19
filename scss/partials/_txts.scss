@@ -10,6 +10,11 @@
     text-shadow: -1px 3px 2px map-get($map: $palette, $key: 'primary');
 }
 
+@mixin description-2{
+    color: map-get($map: $palette, $key: 'light-color');
+    text-shadow: -1px 3px 2px map-get($map: $palette, $key: 'primary');
+}
+
 .seccion1{
     width: auto;
     height: 80px;
